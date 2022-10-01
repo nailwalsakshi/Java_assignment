@@ -7,14 +7,11 @@ public class Program2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String result = " ";
-        String inp = " ";
+        String inp;
         do {
             inp = sc.nextLine();
-            if(inp.equals("XDONE")){
-                break;
-            }
             result = result + " " + inp;
-        } while (true);
+        } while (!inp.equals("XDONE"));
         System.out.println(result);
         sc.close();
     }
