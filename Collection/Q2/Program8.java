@@ -1,11 +1,11 @@
-package Collection;
+package Collection.Q2;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 
-public class Quest {
+public class Program8 {
     public static void main(String[] args) {
         Employee employee1 = new Employee("Anshuman", 21, 100.0);
         Employee employee2 = new Employee("Neelesh", 20, 80.0);

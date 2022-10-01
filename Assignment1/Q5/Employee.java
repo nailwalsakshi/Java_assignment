@@ -1,3 +1,12 @@
+/* Q5) Create a class named Employee with fields firstname,lastname,age and designation. 
+The class should:
+
+have all types of constructors to initialize the object
+class should also have setter methods to update a particular field
+Override its toString method to display a meaningful message using all these fields. */
+
+
+package Assignment1.Q5;
 public class Employee {
 
         private String firstname;
@@ -45,11 +54,11 @@ public class Employee {
         }
 
         public static void main(String[] args) {
-            Employee Emp = new Employee("Jay", "Yadav", "22", "Quality Engineer");
-            String firstname = Emp.get_firstname();
-            String lastname = Emp.get_lastname();
-            String age = Emp.getAge();
-            String designation = Emp.get_designation();
+            Employee emp = new Employee("Jay", "Yadav", "22", "Quality Engineer");
+            String firstname = emp.get_firstname();
+            String lastname = emp.get_lastname();
+            String age = emp.getAge();
+            String designation = emp.get_designation();
 
             System.out.println("Employee's FirstName: " + firstname);
             System.out.println("Employee's LastName: " + lastname);

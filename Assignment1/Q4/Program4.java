@@ -1,5 +1,11 @@
+/* Q4) Create a two dimensional array of integers and display:
+
+sum of all elements of each column
+sum of all elements of each row
+ */
+package Assignment1.Q4;
 import java.util.Scanner;
-public class program4 {
+public class Program4 {
     public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of an array : ");
