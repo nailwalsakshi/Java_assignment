@@ -11,7 +11,7 @@ public class Program2 {
         do {
             inp = sc.nextLine();
             result = result + " " + inp;
-        } while (!inp.equals("XDONE"));
+        } while (!inp.equals("XDONE")); // xdone AANE  se loop se bahar aajayga
         System.out.println(result);
         sc.close();
     }

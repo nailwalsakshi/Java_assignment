@@ -1,10 +1,7 @@
 /* 1) Write Java code to define List . Insert 5 floating point numbers in List, and using an iterator, find the sum of the numbers in List. */
 
-
 package Collection.Q1;
-import java.util.ArrayList;
 import java.util.*;
-import java.util.List;
 
 public class Program1 {
     public static void main(String[] args) {

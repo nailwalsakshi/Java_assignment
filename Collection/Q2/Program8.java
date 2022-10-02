@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Program8 {
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Anshuman", 21, 100.0);
-        Employee employee2 = new Employee("Neelesh", 20, 80.0);
-        Employee employee3 = new Employee("Archit", 21, 90.0);
-        Employee employee4 = new Employee("Pushkar", 22, 120.0);
-        Employee employee5 = new Employee("Prateek", 23, 100.0);
+        Employee employee1 = new Employee("Sakshi", 22, 500.0);
+        Employee employee2 = new Employee("Swati", 24, 800.0);
+        Employee employee3 = new Employee("Shanaya", 20, 400.0);
+        Employee employee4 = new Employee("Shivangi", 27, 120.0);
+        Employee employee5 = new Employee("Shweta", 32, 100.0);
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(employee1);
         employeeList.add(employee2);
