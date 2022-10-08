@@ -1,6 +1,8 @@
-package Java8.Q2;
+/* Create a thread using lambda function */
 
-public class Program11 {
+package Java8.Q3;
+public class LambdaExpression {
+
     public static void main(String[] args)
     {
         Thread EvenNumberThread = new Thread(() -> {
@@ -17,5 +19,5 @@ public class Program11 {
         EvenNumberThread.start();
         
     }
-    
+
 }

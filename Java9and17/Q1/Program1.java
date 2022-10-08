@@ -1,6 +1,9 @@
+//Demonstrate the use of private methods in interfaces
+
+
 package Java9and17.Q1;
 
-public class Program12 {
+public class Program1 {
     interface Inherit {
         default void display() {
             System.out.println("Welcome");
