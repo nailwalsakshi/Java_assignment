@@ -1,6 +1,8 @@
 package Multithreading.Q2;
 
 import java.text.SimpleDateFormat;
+//Use a singleThreadExecutor, newCachedThreadPool() and newFixedThreadPool() to submit a list of tasks and wait for completion of all task
+
 import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

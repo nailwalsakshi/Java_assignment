@@ -3,33 +3,24 @@
 
 package Java9and17.Q1;
 
-public class Program1 {
-    interface Inherit {
-        default void display() {
-            System.out.println("Welcome");
-        }
+interface PrivateMethod{
+    private static String reverseString(String str){
+        return new StringBuilder(str).reverse().toString();
+    }
+    static String toUpperCase(String str){
+        String upperStr = str.toUpperCase();
+        return reverseString(upperStr);
     }
 
-    interface Inherit1 {
-        default void display() {
-            System.out.println("This is");
-        }
+    static String toLowerCase(String str){
+        String lowerStr = str.toLowerCase();
+        return reverseString(lowerStr);
     }
-
-    interface Inherit2 {
-        default void display() {
-            System.out.print("Test");
-        }
-    }
-
-public class DefaultMethod implements Inherit,Inherit1,Inherit2 {
-    public void display()
-    {
-        System.out.println("Default Method");
-        Inherit.super.display();
-        Inherit1.super.display();
-        Inherit2.super.display();
-    }
-    
 }
+
+public class Program1 {
+    public static void main(String[] args) {
+        System.out.println(PrivateMethod.toLowerCase("Sakshi Nailwal"));
+        System.out.println(PrivateMethod.toUpperCase("HELLO THERE"));
+    }
 }

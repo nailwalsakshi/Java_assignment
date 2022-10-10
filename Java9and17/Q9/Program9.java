@@ -12,6 +12,6 @@ public class Program9 {
                 .collect(Collectors.toUnmodifiableList());
 
         System.out.println(integerList);
-        //integerList.add(6);
+        
     }
 }

@@ -14,8 +14,8 @@ public class MethodReference {
     }
     void display2()
     {
-        int a=4;
-        int b=7;
+        int a=7;
+        int b=4;
         int sum = a+b;
         int sub = a-b;
         System.out.println("Instance add method return sum: "+sum+" and returns substraction: "+sub);

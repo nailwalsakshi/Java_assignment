@@ -1,3 +1,5 @@
+//Create and Run a Thread using Runnable Interface and Thread class and show usage of sleep and join methods in the created threads.
+
 package Multithreading.Q1;
 
 class Thread1 extends  Thread{

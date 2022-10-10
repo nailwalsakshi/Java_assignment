@@ -2,26 +2,41 @@
 
 package Java9and17.Q5;
 
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.IntStream;
 
 public class Program5 {
     public static void main(String[] args) {
-        IntStream.rangeClosed(1,10)
-                .filter(e->e>20)
-                .findFirst()
-                .ifPresentOrElse(System.out::println,()-> System.out.println("Invalid input"));
+        //IfPresentOrElse
+        IntStream
+                .rangeClosed(1,10)
+                .filter(e->e>5)
+                .findFirst().ifPresentOrElse(
+                        (e)-> System.out.println("The value is :: "+ e),
+                        ()->System.out.println("Value does not exists")
+                );
 
-        IntStream.rangeClosed(1,10)
-                .filter(e->e>20)
-                .boxed()
-                .findFirst()
-                .or(()-> Optional.of(-1))
-                .ifPresentOrElse(System.out::println,()-> System.out.println("Invalid input"));
 
-        IntStream.rangeClosed(1,10)
-                .filter(e->e>20)
+        //Or
+
+        Optional<Integer> optionalInteger = Arrays.asList(1,2,3,4,5,6,7,8)
+                .stream()
+                .filter(e->e>50)
                 .findFirst()
-                .orElseThrow();
+                .or(()-> Optional.of(-1));
+
+        System.out.println(optionalInteger.get());
+
+        //OrElseThrow
+        IntStream
+                .rangeClosed(1,10)
+                .filter(e->e>50)
+                .findFirst().orElseThrow();
+
+
+
+
+
     }
 }

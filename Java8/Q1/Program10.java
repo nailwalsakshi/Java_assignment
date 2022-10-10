@@ -20,7 +20,7 @@ public class Program10 {
         System.out.println(i.inc(1));
         
         convertupper u=(String a)->a.toUpperCase();
-        System.out.println(u.convert("Aero Plane"));
+        System.out.println(u.convert("sakshi nailwal"));
         }
     }
     interface concatenation{
